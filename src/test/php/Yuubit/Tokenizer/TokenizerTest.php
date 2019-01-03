@@ -42,4 +42,11 @@ class TokenizerTest extends TestCase
         self::assertEquals(3, $tokens[1]->getOffset());
         self::assertEquals(8, $tokens[1]->getLength());
     }
+
+    /**
+     * @expectedException \Yuubit\Tokenizer\Exception\ParsingException
+     */
+    function testException() {
+        $this->tokenizer->tokenize("!?")->toArray();
+    }
 }

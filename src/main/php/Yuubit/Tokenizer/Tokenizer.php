@@ -71,7 +71,7 @@ class Tokenizer
         }
 
         if($longest === null) {
-            new ParsingException(substr($this->string, $this->pos));
+            throw new ParsingException(substr($this->string, $this->pos));
         }
 
         $this->pos = $longest->getOffset() + $longest->getLength();
