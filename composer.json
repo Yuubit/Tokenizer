@@ -1,11 +1,11 @@
 {
-    "name": "yuubit/uri",
+    "name": "yuubit/tokenizer",
     "type": "library",
-    "description": "PHP Library to deal with uris.",
+    "description": "PHP Library to tokenize various inputs.",
     "keywords": [
-        "uri",
-        "url",
-        "urn",
+        "tokenizer",
+        "lexer",
+        "lexical analasys",
         "oop-library"
     ],
     "license": "MIT",
