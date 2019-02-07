@@ -39,7 +39,11 @@ class Tokenizer
         $this->tokens = array_reverse($tokens, true);
     }
 
-    function tokenize(string $string): IStream
+    /**
+     * @param string $string
+     * @return IStream
+     */
+    function tokenize(string $string)
     {
         $this->string = $string;
         $this->size = strlen($this->string);
@@ -49,6 +53,7 @@ class Tokenizer
 
     /**
      * @return Token|null
+     * @throws ParsingException
      */
     function getNext()
     {

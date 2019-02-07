@@ -19,5 +19,5 @@ interface IStream
     /**
      * @return Token[]
      */
-    function toArray(): array;
+    function toArray();
 }

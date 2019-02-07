@@ -36,7 +36,7 @@ class LazyStream implements IStream
     /**
      * {@inheritdoc}
      */
-    function toArray(): array {
+    function toArray() {
         $tokens = [];
 
         while($token = $this->nextToken()) {
